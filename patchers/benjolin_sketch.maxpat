@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 335.0, 100.0, 1101.0, 565.0 ],
+		"rect" : [ 111.0, -985.0, 1567.0, 690.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-15",
+					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 27.5, 277.333341598510742, 169.0, 22.0 ],
-					"text" : "digital_shift_register_sketches"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 31.0, 176.0, 120.0, 22.0 ],
+					"text" : "gen~ @gen d-flipflop"
 				}
 
 			}
@@ -66,7 +67,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 119.0, 640.0, 480.0 ],
+						"rect" : [ 940.0, -836.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -94,8 +95,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 160.0, 131.0, 379.0, 35.0 ],
+									"text" : "https://theorycircuit.com/digital-electronics/flip-flop-types-and-their-truth-tables/"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-44",
 									"linecount" : 2,
@@ -103,7 +116,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 17.0, 188.0, 129.0, 35.0 ],
+									"patching_rect" : [ 17.0, 255.0, 129.0, 35.0 ],
 									"text" : ";\rmax launchbrowser $1"
 								}
 
@@ -315,7 +328,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 17.0, 147.0, 57.0, 22.0 ],
+									"patching_rect" : [ 17.0, 214.0, 57.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -342,6 +355,13 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-30", 0 ],
 									"source" : [ "obj-3", 0 ]
@@ -381,31 +401,6 @@
 					}
 ,
 					"text" : "p resource_URLs"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-51",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 34.0, 175.0, 150.0, 47.0 ],
-					"text" : "https://en.wikipedia.org/wiki/Shift_register#Serial-in_parallel-out_(SIPO)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-50",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 187.0, 133.0, 150.0, 37.0 ],
-					"text" : "20250825\nNOT TESTED"
 				}
 
 			}
@@ -454,7 +449,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1092.0, 144.0, 150.0, 79.0 ],
+					"patching_rect" : [ 913.0, 120.0, 150.0, 79.0 ],
 					"text" : "Some ideas around what a Shift Register is and how a Digital Shift Register uses flip-flops "
 				}
 
@@ -467,7 +462,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1092.0, 229.0, 150.0, 62.0 ],
+					"patching_rect" : [ 913.0, 205.0, 150.0, 62.0 ],
 					"text" : ";\rmax launchbrowser https://en.wikipedia.org/wiki/Flip-flop_(electronics)"
 				}
 
@@ -479,7 +474,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 176.0, 225.0, 22.0 ],
+					"patching_rect" : [ 393.0, 152.0, 225.0, 22.0 ],
 					"text" : "sample and hold"
 				}
 
@@ -493,7 +488,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 407.0, 493.0, 140.0, 64.0 ],
+					"patching_rect" : [ 228.0, 469.0, 140.0, 64.0 ],
 					"text" : "To keep things simple, lets work in raw powers of 2 and scale from there"
 				}
 
@@ -505,7 +500,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 561.0, 96.0, 22.0 ],
+					"patching_rect" : [ 393.0, 537.0, 96.0, 22.0 ],
 					"text" : "scaling to [0., 1.]"
 				}
 
@@ -517,7 +512,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 514.0, 39.0, 22.0 ],
+					"patching_rect" : [ 393.0, 490.0, 39.0, 22.0 ],
 					"text" : "adder"
 				}
 
@@ -529,7 +524,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 561.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 537.0, 35.0, 22.0 ],
 					"text" : "7 out"
 				}
 
@@ -541,7 +536,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 518.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 494.0, 35.0, 22.0 ],
 					"text" : "6 out"
 				}
 
@@ -553,7 +548,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 476.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 452.0, 35.0, 22.0 ],
 					"text" : "5 out"
 				}
 
@@ -565,7 +560,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 434.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 410.0, 35.0, 22.0 ],
 					"text" : "4 out"
 				}
 
@@ -577,7 +572,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 392.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 368.0, 35.0, 22.0 ],
 					"text" : "3 out"
 				}
 
@@ -589,7 +584,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 349.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 325.0, 35.0, 22.0 ],
 					"text" : "2 out"
 				}
 
@@ -601,7 +596,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 307.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 283.0, 35.0, 22.0 ],
 					"text" : "1 out"
 				}
 
@@ -613,7 +608,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 858.0, 266.0, 35.0, 22.0 ],
+					"patching_rect" : [ 679.0, 242.0, 35.0, 22.0 ],
 					"text" : "0 out"
 				}
 
@@ -627,7 +622,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 820.0, 621.0, 152.0, 78.0 ],
+					"patching_rect" : [ 641.0, 597.0, 152.0, 78.0 ],
 					"text" : "When end of register is reached, the value is dropped. This is sometimes called the \"carry\""
 				}
 
@@ -639,7 +634,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 561.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 537.0, 29.5, 22.0 ],
 					"text" : "7"
 				}
 
@@ -651,7 +646,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 519.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 495.0, 29.5, 22.0 ],
 					"text" : "6"
 				}
 
@@ -663,7 +658,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 477.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 453.0, 29.5, 22.0 ],
 					"text" : "5"
 				}
 
@@ -675,7 +670,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 435.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 411.0, 29.5, 22.0 ],
 					"text" : "4"
 				}
 
@@ -687,7 +682,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 392.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 368.0, 29.5, 22.0 ],
 					"text" : "3"
 				}
 
@@ -699,7 +694,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 350.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 326.0, 29.5, 22.0 ],
 					"text" : "2"
 				}
 
@@ -711,7 +706,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 308.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 284.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -723,7 +718,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 266.0, 29.5, 22.0 ],
+					"patching_rect" : [ 599.0, 242.0, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -736,7 +731,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 907.0, 354.0, 154.0, 104.0 ],
+					"patching_rect" : [ 728.0, 330.0, 154.0, 104.0 ],
 					"text" : "If input is high once clock is high, a 1 will be stored in the register\n\nthe next clock pushes the stored value down the register"
 				}
 
@@ -749,7 +744,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 862.0, 76.0, 151.0, 118.0 ],
+					"patching_rect" : [ 683.0, 52.0, 151.0, 118.0 ],
 					"text" : "measures threshold of the input when the threshold when clock input is triggered\n\nsome modules use 1v-2.5v on a 10vpp scale"
 				}
 
@@ -761,7 +756,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 97.0, 69.0, 22.0 ],
+					"patching_rect" : [ 599.0, 73.0, 69.0, 22.0 ],
 					"text" : "comparator"
 				}
 
@@ -773,7 +768,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 97.0, 69.0, 22.0 ],
+					"patching_rect" : [ 393.0, 73.0, 69.0, 22.0 ],
 					"text" : "comparator"
 				}
 
@@ -785,7 +780,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 608.0, 35.0, 22.0 ],
+					"patching_rect" : [ 599.0, 584.0, 35.0, 22.0 ],
 					"text" : "carry"
 				}
 
@@ -799,7 +794,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 407.0, 200.0, 154.0, 118.0 ],
+					"patching_rect" : [ 228.0, 176.0, 154.0, 118.0 ],
 					"text" : "typically, input must be high before gate is high for a 1 to be stored\n\nin otherwords \n\ndata is saved at rising edge of clock"
 				}
 
@@ -811,7 +806,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 608.0, 71.0, 22.0 ],
+					"patching_rect" : [ 393.0, 584.0, 71.0, 22.0 ],
 					"text" : "stepped out"
 				}
 
@@ -826,7 +821,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 340.0, 616.0, 220.0, 131.0 ],
+					"patching_rect" : [ 161.0, 592.0, 220.0, 131.0 ],
 					"text" : "the number of \"buckets\" active will sum to a larger binary number\n\nThe sum is outputted as a static voltage.\n\nzero  bucket = zero volts\none   bucket = some ratio of max\nall     bucket = max volts"
 				}
 
@@ -838,7 +833,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 778.0, 40.0, 35.0, 22.0 ],
+					"patching_rect" : [ 599.0, 16.0, 35.0, 22.0 ],
 					"text" : "input"
 				}
 
@@ -850,7 +845,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 679.0, 248.0, 49.0, 22.0 ],
+					"patching_rect" : [ 500.0, 224.0, 49.0, 22.0 ],
 					"text" : "ASR"
 				}
 
@@ -862,7 +857,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 572.0, 39.0, 36.0, 22.0 ],
+					"patching_rect" : [ 393.0, 15.0, 36.0, 22.0 ],
 					"text" : "clock"
 				}
 
@@ -873,7 +868,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 563.0, 243.0, 293.0, 363.0 ]
+					"patching_rect" : [ 384.0, 219.0, 293.0, 363.0 ]
 				}
 
 			}
@@ -883,7 +878,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 563.0, 78.0, 293.0, 60.0 ]
+					"patching_rect" : [ 384.0, 54.0, 293.0, 60.0 ]
 				}
 
 			}
@@ -893,7 +888,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 563.0, 164.0, 293.0, 59.0 ]
+					"patching_rect" : [ 384.0, 140.0, 293.0, 59.0 ]
 				}
 
 			}
@@ -903,7 +898,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1075.0, 128.0, 191.0, 184.0 ]
+					"patching_rect" : [ 896.0, 104.0, 191.0, 184.0 ]
 				}
 
 			}
@@ -916,7 +911,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 26.0, 71.0, 316.0, 161.0 ],
+					"patching_rect" : [ 26.0, 71.0, 169.0, 140.0 ],
 					"proportion" : 0.5
 				}
 
@@ -927,7 +922,7 @@
 					"maxclass" : "panel",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 18.0, 24.0, 335.0, 220.0 ]
+					"patching_rect" : [ 17.0, 32.0, 189.0, 191.0 ]
 				}
 
 			}
@@ -972,7 +967,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 300.0, 601.5, 300.0 ],
+					"midpoints" : [ 608.5, 276.0, 422.5, 276.0 ],
 					"order" : 2,
 					"source" : [ "obj-28", 0 ]
 				}
@@ -997,7 +992,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 341.0, 601.5, 341.0 ],
+					"midpoints" : [ 608.5, 317.0, 422.5, 317.0 ],
 					"order" : 2,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -1022,7 +1017,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 374.0, 601.5, 374.0 ],
+					"midpoints" : [ 608.5, 350.0, 422.5, 350.0 ],
 					"order" : 2,
 					"source" : [ "obj-30", 0 ]
 				}
@@ -1047,7 +1042,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 430.5, 601.5, 430.5 ],
+					"midpoints" : [ 608.5, 406.5, 422.5, 406.5 ],
 					"order" : 2,
 					"source" : [ "obj-31", 0 ]
 				}
@@ -1072,7 +1067,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 467.0, 601.5, 467.0 ],
+					"midpoints" : [ 608.5, 443.0, 422.5, 443.0 ],
 					"order" : 2,
 					"source" : [ "obj-32", 0 ]
 				}
@@ -1097,7 +1092,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 503.0, 601.5, 503.0 ],
+					"midpoints" : [ 608.5, 479.0, 422.5, 479.0 ],
 					"order" : 2,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -1122,7 +1117,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 551.0, 712.5, 551.0, 712.5, 503.0, 601.5, 503.0 ],
+					"midpoints" : [ 608.5, 527.0, 533.5, 527.0, 533.5, 479.0, 422.5, 479.0 ],
 					"order" : 2,
 					"source" : [ "obj-34", 0 ]
 				}
@@ -1147,7 +1142,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-47", 1 ],
-					"midpoints" : [ 787.5, 593.0, 712.5, 593.0, 712.5, 503.0, 601.5, 503.0 ],
+					"midpoints" : [ 608.5, 569.0, 533.5, 569.0, 533.5, 479.0, 422.5, 479.0 ],
 					"order" : 2,
 					"source" : [ "obj-35", 0 ]
 				}
@@ -1177,7 +1172,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 581.5, 205.5, 787.5, 205.5 ],
+					"midpoints" : [ 402.5, 181.5, 608.5, 181.5 ],
 					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -1193,10 +1188,10 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "digital_shift_register_sketches.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/Benjolin/patchers",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
+				"name" : "d-flipflop.gendsp",
+				"bootpath" : "~/Documents/Max 8/Projects/Benjolin/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{

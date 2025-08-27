@@ -2,8 +2,8 @@
 	"name" : "Benjolin",
 	"version" : 1,
 	"creationdate" : 3838991102,
-	"modificationdate" : 3839094932,
-	"viewrect" : [ 0.0, 100.0, 300.0, 565.0 ],
+	"modificationdate" : 3839129112,
+	"viewrect" : [ -190.0, -985.0, 266.0, 690.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -19,21 +19,16 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"Rungler_Sketches.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"code" : 		{
-			"gated_D_latch.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1
-			}
-,
 			"shift_logic.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1
-			}
-,
-			"sr_latch.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
@@ -42,6 +37,40 @@
 				"kind" : "gendsp",
 				"local" : 1
 			}
+,
+			"flipflopfollower.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"flipflopleader.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"d-flipflop_integrated.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"d-flipflop_abstractions.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"latch.gated-d.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"latch.sr.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 
