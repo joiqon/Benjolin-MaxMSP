@@ -2,7 +2,7 @@
 	"name" : "Benjolin",
 	"version" : 1,
 	"creationdate" : 3838991102,
-	"modificationdate" : 3839131182,
+	"modificationdate" : 3839134420,
 	"viewrect" : [ -190.0, -985.0, 266.0, 690.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -29,11 +29,6 @@
 ,
 		"code" : 		{
 			"shift_logic.gendsp" : 			{
-				"kind" : "gendsp",
-				"local" : 1
-			}
-,
-			"flipflop.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
