@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "live.scope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 515.0, 277.0, 179.0, 42.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -76,55 +87,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-46",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 330.0, 68.0, 31.0, 22.0 ],
-					"text" : "sig~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"automation" : "0",
-					"automationon" : "1",
-					"id" : "obj-47",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 330.0, 29.0, 43.0, 34.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "0", "1" ],
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_longname" : "live.text[1]",
-							"parameter_mmax" : 1,
-							"parameter_modmode" : 0,
-							"parameter_shortname" : "live.text",
-							"parameter_type" : 2
-						}
-
-					}
-,
-					"text" : "Xor",
-					"texton" : "Xor",
-					"varname" : "live.text[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-45",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 251.0, 68.0, 31.0, 22.0 ],
+					"patching_rect" : [ 330.0, 81.0, 31.0, 22.0 ],
 					"text" : "sig~"
 				}
 
@@ -139,7 +107,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 251.0, 29.0, 43.0, 34.0 ],
+					"patching_rect" : [ 330.0, 35.0, 43.0, 34.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "0", "1" ],
@@ -232,7 +200,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 383.0, 187.0, 88.0, 20.0 ],
+					"patching_rect" : [ 384.0, 132.0, 88.0, 20.0 ],
 					"text" : "THIS WORKS!"
 				}
 
@@ -362,7 +330,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 172.0, 68.0, 40.0, 22.0 ],
+					"patching_rect" : [ 224.666666666666657, 81.0, 40.0, 22.0 ],
 					"text" : "r~ xor"
 				}
 
@@ -374,7 +342,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 93.0, 68.0, 46.0, 22.0 ],
+					"patching_rect" : [ 119.333333333333314, 81.0, 46.0, 22.0 ],
 					"text" : "r~ data"
 				}
 
@@ -386,7 +354,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 14.0, 68.0, 50.0, 22.0 ],
+					"patching_rect" : [ 14.0, 81.0, 50.0, 22.0 ],
 					"text" : "r~ clock"
 				}
 
@@ -417,9 +385,9 @@
 				"box" : 				{
 					"id" : "obj-123",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 9,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"numinlets" : 4,
+					"numoutlets" : 10,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 14.0, 121.0, 335.0, 22.0 ],
 					"text" : "gen~ @gen \"d-flipflop_integrated (gen_sub_patcher).gendsp\""
 				}
@@ -693,6 +661,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"source" : [ "obj-123", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-123", 2 ]
 				}
@@ -808,20 +783,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-123", 4 ],
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-59", 1 ],
 					"source" : [ "obj-48", 0 ]
 				}
@@ -907,7 +868,6 @@
  ],
 		"parameters" : 		{
 			"obj-42" : [ "live.text", "live.text", 0 ],
-			"obj-47" : [ "live.text[1]", "live.text", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
