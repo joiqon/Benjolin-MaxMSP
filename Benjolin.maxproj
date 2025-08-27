@@ -2,7 +2,7 @@
 	"name" : "Benjolin",
 	"version" : 1,
 	"creationdate" : 3838991102,
-	"modificationdate" : 3839129112,
+	"modificationdate" : 3839131182,
 	"viewrect" : [ -190.0, -985.0, 266.0, 690.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -15,12 +15,12 @@
 				"local" : 1
 			}
 ,
-			"digital_shift_register_sketches.maxpat" : 			{
+			"Rungler_Sketch (working but no loop).maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"Rungler_Sketches.maxpat" : 			{
+			"Rungler_Sketch (gen internal sub patcher).maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -64,6 +64,11 @@
 			}
 ,
 			"latch.sr.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"d-flipflop_integrated (gen_sub_patcher).gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
