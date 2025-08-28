@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 361.0, 113.0, 1307.0, 703.0 ],
+		"rect" : [ 361.0, 114.0, 1307.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -175,7 +175,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 44.0, 62.5, 22.0 ],
+					"patching_rect" : [ 472.0, 44.0, 63.0, 22.0 ],
 					"text" : "rung_2 $1"
 				}
 
@@ -608,7 +608,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 139.0, 44.0, 65.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"text" : "xb_1 $1"
 				}
 
@@ -1612,19 +1611,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "benjolin_dual_osc.gendsp",
 				"bootpath" : "~/Documents/Max 8/Projects/Benjolin/code",
