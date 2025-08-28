@@ -367,8 +367,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 295.0, 221.5, 117.0, 22.0 ],
-					"text" : "param @name xb_2"
+					"patching_rect" : [ 295.0, 221.5, 182.0, 22.0 ],
+					"text" : "param @name xb_2 @default 0."
 				}
 
 			}
@@ -379,8 +379,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 276.0, 197.5, 117.0, 22.0 ],
-					"text" : "param @name xb_1"
+					"patching_rect" : [ 276.0, 197.5, 182.0, 22.0 ],
+					"text" : "param @name xb_1 @default 0."
 				}
 
 			}
@@ -553,8 +553,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 252.5, 173.5, 129.0, 22.0 ],
-					"text" : "param @name rung_2"
+					"patching_rect" : [ 252.5, 173.5, 194.0, 22.0 ],
+					"text" : "param @name rung_2 @default 0."
 				}
 
 			}
@@ -565,8 +565,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 149.0, 129.0, 22.0 ],
-					"text" : "param @name rung_1"
+					"patching_rect" : [ 230.0, 149.0, 194.0, 22.0 ],
+					"text" : "param @name rung_1 @default 0."
 				}
 
 			}
@@ -577,8 +577,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 207.0, 125.0, 115.0, 22.0 ],
-					"text" : "param @name fb_2"
+					"patching_rect" : [ 207.0, 125.0, 283.0, 22.0 ],
+					"text" : "param @name fb_2 @default 0. @min -3. @max 3."
 				}
 
 			}
@@ -589,8 +589,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 157.0, 54.0, 115.0, 22.0 ],
-					"text" : "param @name fb_1"
+					"patching_rect" : [ 157.0, 54.0, 283.0, 22.0 ],
+					"text" : "param @name fb_1 @default 0. @min -3. @max 3."
 				}
 
 			}
@@ -601,8 +601,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 182.0, 76.5, 239.0, 22.0 ],
-					"text" : "param freq_2 @min 0. @max samplerate/2"
+					"patching_rect" : [ 182.0, 76.5, 374.0, 22.0 ],
+					"text" : "param freq_2 @default 1. @min samplerate/-2. @max samplerate/2."
 				}
 
 			}
@@ -613,8 +613,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 135.0, 6.0, 239.0, 22.0 ],
-					"text" : "param freq_1 @min 0. @max samplerate/2"
+					"patching_rect" : [ 135.0, 6.0, 374.0, 22.0 ],
+					"text" : "param freq_1 @default 1. @min samplerate/-2. @max samplerate/2."
 				}
 
 			}
