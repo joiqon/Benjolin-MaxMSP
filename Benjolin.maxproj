@@ -2,7 +2,7 @@
 	"name" : "Benjolin",
 	"version" : 1,
 	"creationdate" : 3838991102,
-	"modificationdate" : 3839225534,
+	"modificationdate" : 3839227688,
 	"viewrect" : [ 8.0, 114.0, 318.0, 702.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -34,6 +34,11 @@
 			}
 ,
 			"philipmeyer_filter.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
+			"rungler_&_dual_osc.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
