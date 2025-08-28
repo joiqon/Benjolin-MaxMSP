@@ -2,7 +2,7 @@
 	"name" : "Benjolin",
 	"version" : 1,
 	"creationdate" : 3838991102,
-	"modificationdate" : 3839212574,
+	"modificationdate" : 3839222031,
 	"viewrect" : [ 8.0, 114.0, 318.0, 702.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -10,7 +10,7 @@
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"rungler.maxpat" : 			{
+			"benjolin_nofilter.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
